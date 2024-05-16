@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sedan SC", serif;
+    
+}
+
+.heading {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #33AFFF;
+    margin-right: auto;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.about-content p {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-right: auto;
+    text-align: justify;   
+    
+}
+
+.about img{
+    float: right;
+    width: 50%;
+    margin-left: auto;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+    .container {
+        padding: 0;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+}
